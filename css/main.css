@@ -1,0 +1,449 @@
+html{
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline-color: #b38901;
+  outline-offset: 3px;
+  outline-width: 5px;
+  outline-style:  double;
+}
+
+*:active{
+  outline: none;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+#about-me, #skills, #certificates, #projects{
+  margin: 100px;
+  height: 1px;
+}
+
+
+
+/* Home */
+.home{
+  background-color: #f5be02;
+  height: 60vh;
+  padding: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.home span, .home p{
+  color: white;
+  text-transform: uppercase;
+}
+
+.home p{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+/* Navbar */
+.navbar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5be02;
+  box-shadow: 0px 0px 5px #b38901;
+  color: #fff;
+  overflow: hidden;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.logo {
+  height: 80px;
+}
+
+.logo img{
+  position: relative;
+  bottom: 20px;
+  height: 120px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #b38901;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  text-transform: uppercase;
+  padding: 5px 14px;
+}
+
+.services {
+  position: relative;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+.r-icon {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+
+
+/* About me */
+.about-me{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.a-img{
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.a-img img{
+  height: 350px;
+}
+
+.a-text{
+  width: 50%;
+}
+
+.a-text h1, .a-text h3{
+  margin-bottom: 20px;
+}
+
+.a-text p{
+  opacity: 0.8;
+}
+
+.about-me a{
+  color: black;
+}
+
+
+/* Skills */
+.white-screen{
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+.skills{
+  background-color: #f6f2ed;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.s-text{
+  margin: 40px;
+}
+
+.s-cards{
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.s-about{
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.s-about h1{
+  color: #f5be02;
+}
+
+.s-about h2{
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.s-about i{
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  width: 66px;
+  height: 66px;
+  font-size: 40px;
+  color: #fff;
+  background-color: #f5be02;
+}
+
+
+/* certification */
+.certificates{
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.certificates img{
+  width: 17%;
+  transition: all 2s;
+}
+
+.certificates img:hover{
+  width: 19vw;
+}
+
+
+
+/* projects */
+.projects{
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p-card, .p-card:visited{
+  min-height: 420px;
+  width: 23vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5be02;
+  border-radius: 20px;
+}
+
+.p-card a h3{
+  color: white;
+}
+
+.p-card img:nth-child(1){
+  object-fit: cover;
+  height: 200px;
+}
+
+#img-c{
+  height: auto;
+  width: 90px;
+}
+
+.p-card img{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.client{
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-t{
+  margin-top: 10px;
+}
+
+.client img{
+  width: 70px;
+}
+
+.client div{
+  color: white;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.client i{
+  margin-top: 10px;
+  color: yellow;
+}
+
+/* Footer */
+footer{
+  padding: 50px;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.f-links{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.f-link{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-link a{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.f-link a:hover{
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  #about-me, #skills, #certificates, #projects{
+    margin: 20px;
+    height: 1px;
+  }
+
+  .about-me, .a-text, .home, .navbar{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .home{
+    display: block;
+    font-size: 15px;
+  }
+
+  .navbar{
+    margin: 0;
+    height: 80px;
+  }
+
+  .menu {
+    width: 100%;
+    display:none;
+    position: fixed;
+    background-color: #f5be02;
+    top: 80px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#b38901;
+    transition: 0.3s ease;
+  }
+
+  .logo img{
+    position: static;
+    height: 80px;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+
+  .r-icon {
+    display: block;
+  }
+
+  .a-text{
+    line-height: 20px;
+  }
+
+  .a-text h1{
+    line-height: 50px;
+  }
+
+  .a-img{
+    display: none;
+  }
+
+  .s-cards, .certificates{
+    flex-direction: column;
+  }
+
+  .s-cards h2{
+    font-size: 16px;
+  }
+
+  .certificates img , .certificates img:hover {
+    width: 90%;
+  }
+
+  .p-cards{
+    flex-direction: column;
+  }
+
+  .p-card{
+    width: 95vw;
+  }
+}
