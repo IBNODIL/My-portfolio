@@ -313,6 +313,10 @@ input[type=checkbox]{
   color: yellow;
 }
 
+.finger{
+  width: 10%;
+}
+
 /* Footer */
 footer{
   padding: 50px;
