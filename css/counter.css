@@ -1,0 +1,45 @@
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 39, 39);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: white;
+    box-shadow: 5px 5px rgb(184, 18, 18);
+}
+
+.btn-2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30% -50%);
+}
+
+.btn:active{
+    box-shadow: 0px 0px inset rgb(184, 18, 18);
+}
+
+.box{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-40% -55%);
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(39, 100, 255);
+    justify-content: center;
+    color: white;
+
+}

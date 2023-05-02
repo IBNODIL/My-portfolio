@@ -1,0 +1,48 @@
+@keyframes animation{
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-90deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+.re, .re2, .re3, .re4, .re5, .re6, .re7, .re8, .re9, .re10{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    box-shadow: 0 0 15px;
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.re, .re3, .re5, .re7, .re9 {
+    background-color: aqua;
+    /* animation-delay: 1s; */
+}
+
+.re2, .re4, .re6, .re8, .re10{
+    background-color: aquamarine;
+}
