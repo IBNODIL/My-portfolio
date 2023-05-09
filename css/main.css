@@ -452,3 +452,22 @@ footer{
     width: 95vw;
   }
 }
+
+
+.dark{
+  background: #222 !important;
+  color: #fff !important;
+}
+
+div.dark{
+  background-color: #444 !important;
+  color: white !important;
+}
+
+div.dark a{
+  color: #ddd !important;
+}
+
+.hide{
+  display: none;
+}

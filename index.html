@@ -15,7 +15,7 @@
 <body>
   <span id="home"></span>
 
-  <nav class="navbar">
+  <nav id="nav-id" class="navbar">
 
     <div class="logo">
       <img src="./img/icon.jpg" alt="">
@@ -23,11 +23,13 @@
 
     <ul class="nav-links">
 
-      <input type="checkbox" id="checkbox_toggle" />
+      <input type="checkbox" id="checkbox_toggle"/>
 
       <label for="checkbox_toggle" class="r-icon">&#9776;</label>
 
       <div class="menu">
+        <li id="dark-light" class="bi  bi-moon-stars-fill"> Dark </li>
+        <li id="light-dark" class="hide bi  bi-sun-fill"> light</li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about-me">About me</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -38,13 +40,13 @@
   </nav>
 
 
-  <div class="home">
+  <div class="home " id="home-id">
     <p>Frontend developer</p>
     <h1>Hello, I'm <span>Rustamov Mubashshirhon</span> Welcome to my portfolio.</h1>
   </div>
   <div id="about-me"></div>
 
-  <div class="about-me">
+  <div id="about-me-id" class="about-me">
     <div class="a-img">
       <img src="./img/men.png" alt="">
     </div>
@@ -68,8 +70,8 @@
     </div>
   </div><div id="skills"></div>
 
-  <div class="white-screen" >
-    <div class="skills" >
+  <div id="skills-id" class="white-screen" >
+    <div class="skills" id="skills-id-2">
       <div class="s-text">
         <h1>My skills</h1>
       </div>
@@ -113,7 +115,7 @@
   <div class="projects" >
     <h1>My projects</h1>
     <div class="p-cards">
-      <div class="p-card">
+      <div id="p-card-1" class="p-card">
         <img src="./img/projects/muborak-travel.png" alt="">
         <a href="http://muboraktravel.uz" target="_blank">
           <h3>Muborak Travel</h3>
@@ -132,77 +134,77 @@
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-2" class="p-card">
         <img src="./img/projects/akadem-nashr.png" alt="">
         <a href="https://akadem-nashr-ibn-odil-dev.netlify.app" target="_blank">
           <h3>Akadem nashr</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-3" class="p-card">
         <img src="./img/projects/ansor-med.png" alt="">
         <a href="https://ansor-med-ibn-odil-dev.netlify.app/" target="_blank">
           <h3>Ansor med</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-4" class="p-card">
         <img src="./img/projects/bookmarks.png" alt="">
         <a href="https://bookmark-list-ibn-odil-dev.netlify.app/" target="_blank">
           <h3>Bookmark list</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-5" class="p-card">
         <img src="./img/projects/counter.PNG" alt="">
         <a href="./projects/js projects/caunter.html" target="_blank">
           <h3>Counter</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-6" class="p-card">
         <img src="./img/projects/simple-calculator.png" alt="">
         <a href="./projects/js projects/simple-calculator.html" target="_blank">
           <h3>Calculator V 1.0</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-7" class="p-card">
         <img src="./img/projects/calculator.png" alt="">
         <a href="https://calculator-ibn-odil-dev.netlify.app/" target="_blank">
           <h3>Calculator V 2.0</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-8" class="p-card">
         <img src="./img/projects/cube.png" alt="">
         <a href="./projects/animations/cube.html" target="_blank">
           <h3>3D Cube</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-9" class="p-card">
         <img src="./img/projects/straight-light.png" alt="">
         <a href="./projects/animations/straight-light.html" target="_blank">
           <h3>Traffic light</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-10" class="p-card">
         <img src="./img/projects/Pyramid.png" alt="">
         <a href="./projects/animations/illistr.html" target="_blank">
           <h3>Pyramid animation</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-11" class="p-card">
         <img src="./img/projects/scanner.png" alt="">
         <a href="./projects/animations/qr-code.html" target="_blank">
           <h3>Qr code scanner animation</h3>
         </a>
       </div>
 
-      <div class="p-card">
+      <div id="p-card-12" class="p-card">
         <img class="finger" src="./img/projects/f-scanner.png" alt="">
         <a href="./projects/animations/finger-scanner.html" target="_blank">
           <h3>Finger scanner animation</h3>
@@ -243,5 +245,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
