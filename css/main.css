@@ -73,12 +73,12 @@ li{
   padding: 20px;
   background-color: #f5be02;
   box-shadow: 0px 0px 5px #b38901;
-  color: #fff;
+  color: #111;
   overflow: hidden;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #111;
 }
 
 .logo {
@@ -131,6 +131,7 @@ input[type=checkbox]{
   align-items: center;
   justify-content: space-around;
   margin-bottom: 100px;
+  height: 80vh;
 }
 
 .a-img{
@@ -457,15 +458,28 @@ footer{
 .dark{
   background: #222 !important;
   color: #fff !important;
+  box-shadow: none;
 }
 
 div.dark{
-  background-color: #444 !important;
+  background-color: #555 !important;
   color: white !important;
 }
 
 div.dark a{
   color: #ddd !important;
+}
+
+nav.dark{
+  background: #444 !important;
+}
+
+nav.dark .nav-links a {
+  color: #fff;
+}
+
+nav.dark .menu li:hover {
+  background: #666;
 }
 
 .hide{

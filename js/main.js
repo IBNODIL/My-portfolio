@@ -1,6 +1,8 @@
 let elDark = document.getElementById('dark-light');
 let elLight = document.getElementById('light-dark');
-let elAbout = document.getElementsByClassName('s-about')
+let elAbout = document.getElementsByClassName('s-about');
+let elLightPng = document.getElementById('icon-white');
+let elDarkPng = document.getElementById('icon-black');
 
 elDark.addEventListener('click', function(){
     for (let i = 0; i < elAbout.length; i++) {
@@ -11,6 +13,7 @@ elDark.addEventListener('click', function(){
     document.getElementById('skills-id-2').classList.add('dark');
     document.getElementById('about-me-id').classList.add('dark');
     document.getElementById('home-id').classList.add('dark');
+    document.getElementById('nav-id').classList.add('dark');
     document.getElementById('p-card-1').classList.add('dark');
     document.getElementById('p-card-2').classList.add('dark');
     document.getElementById('p-card-3').classList.add('dark');
@@ -25,7 +28,9 @@ elDark.addEventListener('click', function(){
     document.getElementById('p-card-12').classList.add('dark');
 
     elDark.classList.add('hide');
+    elDarkPng.classList.add('hide');
     elLight.classList.remove('hide');
+    elLightPng.classList.remove('hide');
 });
 
 elLight.addEventListener('click', function(){
@@ -37,6 +42,7 @@ elLight.addEventListener('click', function(){
     document.getElementById('skills-id-2').classList.remove('dark');
     document.getElementById('about-me-id').classList.remove('dark');
     document.getElementById('home-id').classList.remove('dark');
+    document.getElementById('nav-id').classList.remove('dark');
     document.getElementById('p-card-1').classList.remove('dark');
     document.getElementById('p-card-2').classList.remove('dark');
     document.getElementById('p-card-3').classList.remove('dark');
@@ -51,5 +57,7 @@ elLight.addEventListener('click', function(){
     document.getElementById('p-card-12').classList.remove('dark');
 
     elDark.classList.remove('hide');
+    elDarkPng.classList.remove('hide');
     elLight.classList.add('hide');
+    elLightPng.classList.add('hide');
 });
