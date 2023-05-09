@@ -452,6 +452,12 @@ footer{
   .p-card{
     width: 95vw;
   }
+
+
+
+  nav.dark .menu {
+    background-color: #444;
+  }
 }
 
 
