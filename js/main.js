@@ -1,3 +1,4 @@
+alert('Assalomu alaykum mening yangi portfolioyim https://ibn-odil-dev-portfolio.netlify.app/');
 let elDark = document.getElementById('dark-light');
 let elLight = document.getElementById('light-dark');
 let elAbout = document.getElementsByClassName('s-about');
